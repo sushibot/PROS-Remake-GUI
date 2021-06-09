@@ -15,8 +15,10 @@ function Header({ user, loading }) {
               <a>About</a>
             </Link>
           </li>
+          {/*If user props is present and loading is falsey, display bottom block  */}
           {!loading &&
             (user ? (
+              //This part renders if the user is logged in
               <>
                 <li>
                   <Link href="/profile">
@@ -24,8 +26,8 @@ function Header({ user, loading }) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/advanced/ssr-profile">
-                    <a>Server rendered profile (advanced)</a>
+                  <Link href="/activity/form/activity.form">
+                    <a>Activity</a>
                   </Link>
                 </li>
                 <li>
