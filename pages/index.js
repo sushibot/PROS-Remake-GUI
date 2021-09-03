@@ -1,26 +1,31 @@
-import Layout from '../components/layout'
-import { useFetchUser } from '../lib/user'
-
+import Layout from "../components/layout";
+import { useFetchUser } from "../lib/user";
+import { Card } from "../components/card";
 function Home() {
-  const { user, loading } = useFetchUser()
+  const { user, loading } = useFetchUser();
 
   return (
     <Layout user={user} loading={loading}>
-      <h1>Next.js and Auth0 Example</h1>
+      <ol
+        style={{
+          listStyle: "none",
+          margin: "0",
+          padding: "0",
+          display: "flex",
+          flexDirection: "row",
+
+          overflowX: "auto",
+        }}
+      >
+        <li>
+          <Card></Card>
+        </li>
+        <li>
+          <Card></Card>
+        </li>
+      </ol>
 
       {loading && <p>Loading login info...</p>}
-
-      {!loading && !user && (
-        <>
-          <p>
-            To test the login click in <i>Login</i>
-          </p>
-          <p>
-            Once you have logged in you should be able to click in{' '}
-            <i>Profile</i> and <i>Logout</i>
-          </p>
-        </>
-      )}
 
       {user && (
         <>
@@ -31,7 +36,7 @@ function Home() {
         </>
       )}
     </Layout>
-  )
+  );
 }
 
-export default Home
+export default Home;
