@@ -25,7 +25,7 @@ function Home() {
         </li>
       </ol>
 
-      {loading && <p>Loading login info...</p>}
+      {/* {loading && <p>Loading login info...</p>} */}
 
       {user && (
         <>

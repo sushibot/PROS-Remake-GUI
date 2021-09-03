@@ -8,7 +8,7 @@ export function Card() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width: "300px",
+        width: "350px",
       }}
     >
       <div style={{ width: "100%", marginBttom: "1rem" }}>
