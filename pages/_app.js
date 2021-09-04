@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import { useFetchUser } from "../lib/user";
 import { Card } from "../components/card";
+import "./css/index.css";
 function Home() {
   const { user, loading } = useFetchUser();
 

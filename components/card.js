@@ -7,7 +7,7 @@ export function Card() {
         <img className={styles.image_container} src={festival_pic} />
       </div>
       <figure className={styles.text_container}>
-        <h3 style={{ marginBottom: "0.5rem", margin: "0" }}>
+        <h3 style={{ fontWeight: 600, marginBottom: "0.5rem" }}>
           Ala Moana Food Festival
         </h3>
         <summary style={{ color: "#646464" }}>August 3rd, 2021</summary>
