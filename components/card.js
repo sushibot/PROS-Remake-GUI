@@ -1,31 +1,12 @@
-import Image from "next/image";
+import styles from "./css/Card.module.css";
 import festival_pic from "../public/food_festival.jpg";
 export function Card() {
   return (
-    <section
-      style={{
-        padding: "1rem",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        width: "350px",
-      }}
-    >
-      <div style={{ width: "100%", marginBttom: "1rem" }}>
-        <img
-          src={festival_pic}
-          style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-        />
+    <section className={styles.container}>
+      <div className={styles.mb_1}>
+        <img className={styles.image_container} src={festival_pic} />
       </div>
-      <figure
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "start",
-          justifyContent: "flex-start",
-          width: "100%",
-        }}
-      >
+      <figure className={styles.text_container}>
         <h3 style={{ marginBottom: "0.5rem", margin: "0" }}>
           Ala Moana Food Festival
         </h3>

@@ -1,5 +1,5 @@
 {
-  "name": "auth0",
+  "name": "PROS-Remake",
   "scripts": {
     "dev": "next",
     "build": "next build",
