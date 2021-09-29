@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./header";
 
-function Layout({ user, loading = false, children }) {
+function Layout({ children }) {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ function Layout({ user, loading = false, children }) {
         .container {
           max-width: 42rem;
           margin: 1.5rem auto;
-          padding: 1rem;
+          padding: 1.5rem;
         }
       `}</style>
       <style jsx global>{`

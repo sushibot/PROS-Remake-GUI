@@ -1,12 +1,26 @@
 import Layout from "../components/layout";
 import { useFetchUser } from "../lib/user";
 import { Card } from "../components/card";
+import { Button } from "../components/button";
 import "./css/index.css";
 function Home() {
   const { user, loading } = useFetchUser();
 
   return (
     <Layout user={user} loading={loading}>
+      <section
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "1rem",
+        }}
+      >
+        <h4>Upcoming Events</h4>
+        <Button text="View All"></Button>
+      </section>
+
       <ol
         style={{
           listStyle: "none",
@@ -25,17 +39,6 @@ function Home() {
           <Card></Card>
         </li>
       </ol>
-
-      {/* {loading && <p>Loading login info...</p>} */}
-
-      {user && (
-        <>
-          <h4>Rendered user info on the client</h4>
-          <img src={user.picture} alt="user picture" />
-          <p>nickname: {user.nickname}</p>
-          <p>name: {user.name}</p>
-        </>
-      )}
     </Layout>
   );
 }

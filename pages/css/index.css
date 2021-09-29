@@ -5,8 +5,10 @@ summary {
   font-weight: 600;
 }
 h1 {
+  font-size: 4rem;
 }
 h2 {
+  font-size: 3rem;
 }
 h3 {
   font-size: 2.827rem;
@@ -14,8 +16,9 @@ h3 {
 }
 h4 {
   font-size: 2rem;
+  font-weight: 600;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
