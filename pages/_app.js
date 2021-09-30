@@ -2,7 +2,8 @@ import Layout from "../components/layout";
 import { useFetchUser } from "../lib/user";
 import { Card } from "../components/card";
 import { Button } from "../components/button";
-import "./css/index.css";
+import { Announcement } from "../components/announcement";
+import styles from "./css/index.css";
 function Home() {
   const { user, loading } = useFetchUser();
 
@@ -47,22 +48,8 @@ function Home() {
             </li>
           </ol>
         </li>
-        <li
-          style={{
-            padding: "1.5rem",
-            background: "#04201B",
-            marginBottom: "1rem",
-          }}
-        >
-          <section
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "2rem",
-            }}
-          >
+        <li className={styles.announcement_container}>
+          <section className={styles.announcements_header}>
             <h4 style={{ color: "white" }}>Announcements</h4>
             <Button
               text="View All"
@@ -72,94 +59,29 @@ function Home() {
             />
           </section>
           <ol>
-            <li
-              style={{
-                borderBottom: "1px solid #0AC5B3",
-                paddingBottom: "2rem",
-                marginBottom: "2rem",
-              }}
-            >
-              <section style={{ marginBottom: "1rem" }}>
-                <h5 style={{ color: "#0AC5B3", marginBottom: "0.5rem" }}>
-                  Park Closures and Updates
-                </h5>
-                <label style={{ color: "white" }}>June 24, 2021</label>
-              </section>
-              <section style={{ marginBottom: "0.5rem" }}>
-                <p
-                  style={{
-                    color: "white",
-                    lineHeight: "1.35rem",
-                  }}
-                >
-                  As we get closer to 60% vaccination statewide, the Governor
-                  and Mayor ...
-                </p>
-              </section>
-              <section>
-                <a style={{ color: "#0AC5B3", textDecoration: "underline" }}>
-                  Read More
-                </a>
-              </section>
+            <li className={styles.annoucement_item}>
+              <Announcement
+                text="As we get closer to 60% vaccination statewide, the Governor
+                  and Mayor ..."
+                title="Parks & Closure Updates"
+                subtitle="June 24, 2021"
+              />
             </li>
-            <li
-              style={{
-                borderBottom: "1px solid #0AC5B3",
-                paddingBottom: "2rem",
-                marginBottom: "2rem",
-              }}
-            >
-              <section style={{ marginBottom: "1rem" }}>
-                <h5 style={{ color: "#0AC5B3", marginBottom: "0.5rem" }}>
-                  Park Closures and Updates
-                </h5>
-                <label style={{ color: "white" }}>June 24, 2021</label>
-              </section>
-              <section style={{ marginBottom: "0.5rem" }}>
-                <p
-                  style={{
-                    color: "white",
-                    lineHeight: "1.35rem",
-                  }}
-                >
-                  As we get closer to 60% vaccination statewide, the Governor
-                  and Mayor ...
-                </p>
-              </section>
-              <section>
-                <a style={{ color: "#0AC5B3", textDecoration: "underline" }}>
-                  Read More
-                </a>
-              </section>
+            <li className={styles.annoucement_item}>
+              <Announcement
+                text="As we get closer to 60% vaccination statewide, the Governor
+                  and Mayor ..."
+                title="Parks & Closure Updates"
+                subtitle="June 24, 2021"
+              />
             </li>
-            <li
-              style={{
-                borderBottom: "1px solid #0AC5B3",
-                paddingBottom: "2rem",
-              }}
-            >
-              <section style={{ marginBottom: "1rem" }}>
-                <h5 style={{ color: "#0AC5B3", marginBottom: "0.5rem" }}>
-                  Park Closures and Updates
-                </h5>
-                <label style={{ color: "white" }}>June 24, 2021</label>
-              </section>
-              <section style={{ marginBottom: "0.5rem" }}>
-                <p
-                  style={{
-                    color: "white",
-                    lineHeight: "1.35rem",
-                  }}
-                >
-                  As we get closer to 60% vaccination statewide, the Governor
-                  and Mayor ...
-                </p>
-              </section>
-              <section>
-                <a style={{ color: "#0AC5B3", textDecoration: "underline" }}>
-                  Read More
-                </a>
-              </section>
+            <li className={styles.annoucement_item}>
+              <Announcement
+                text="As we get closer to 60% vaccination statewide, the Governor
+                  and Mayor ..."
+                title="Parks & Closure Updates"
+                subtitle="June 24, 2021"
+              />
             </li>
           </ol>
         </li>

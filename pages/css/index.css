@@ -22,3 +22,20 @@ h5 {
   font-size: 1.15rem;
   font-weight: 600;
 }
+.announcements_container {
+  padding: 1.5rem;
+  background: #04201b;
+  margin-bottom: 1rem;
+}
+.announcements_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.announcement_item {
+  border-bottom: 1px solid #0ac5b3;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
