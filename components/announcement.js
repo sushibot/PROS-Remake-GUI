@@ -8,10 +8,12 @@ export function Announcement({ text, title, subtitle, Button }) {
         <label className={styles.subtitle}>{subtitle}</label>
       </section>
       <section className={styles.mb_half}>
-        <p>{text}</p>
+        <p className={styles.text}>{text}</p>
       </section>
       <section>
-        <a style={{ color: "#0AC5B3", textDecoration: "underline" }} />
+        <a style={{ color: "#0AC5B3", textDecoration: "underline" }}>
+          Read More
+        </a>
         {/* {Button} */}
       </section>
     </div>

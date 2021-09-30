@@ -3,23 +3,16 @@ import { useFetchUser } from "../lib/user";
 import { Card } from "../components/card";
 import { Button } from "../components/button";
 import { Announcement } from "../components/announcement";
-import styles from "./css/index.css";
+import "./css/index.css";
+import styles from "./css/app.module.css";
 function Home() {
   const { user, loading } = useFetchUser();
 
   return (
     <Layout user={user} loading={loading}>
       <ol>
-        <li style={{ marginBottom: "2rem", padding: "1.5rem" }}>
-          <section
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "2rem",
-            }}
-          >
+        <li className={styles.upcoming_events_container}>
+          <section className={styles.upcoming_events_header}>
             <h4>Upcoming Events</h4>
             <Button
               text="View All"
@@ -29,17 +22,7 @@ function Home() {
             />
           </section>
 
-          <ol
-            style={{
-              listStyle: "none",
-              margin: "0",
-              padding: "0",
-              display: "flex",
-              flexDirection: "row",
-
-              overflowX: "auto",
-            }}
-          >
+          <ol className={styles.upcoming_events_list}>
             <li>
               <Card></Card>
             </li>
@@ -48,7 +31,7 @@ function Home() {
             </li>
           </ol>
         </li>
-        <li className={styles.announcement_container}>
+        <li className={styles.announcements_container}>
           <section className={styles.announcements_header}>
             <h4 style={{ color: "white" }}>Announcements</h4>
             <Button
@@ -59,7 +42,7 @@ function Home() {
             />
           </section>
           <ol>
-            <li className={styles.annoucement_item}>
+            <li className={styles.announcement_item}>
               <Announcement
                 text="As we get closer to 60% vaccination statewide, the Governor
                   and Mayor ..."
@@ -67,7 +50,7 @@ function Home() {
                 subtitle="June 24, 2021"
               />
             </li>
-            <li className={styles.annoucement_item}>
+            <li className={styles.announcement_item}>
               <Announcement
                 text="As we get closer to 60% vaccination statewide, the Governor
                   and Mayor ..."
@@ -75,7 +58,7 @@ function Home() {
                 subtitle="June 24, 2021"
               />
             </li>
-            <li className={styles.annoucement_item}>
+            <li className={styles.announcement_item}>
               <Announcement
                 text="As we get closer to 60% vaccination statewide, the Governor
                   and Mayor ..."
