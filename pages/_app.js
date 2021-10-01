@@ -3,42 +3,17 @@ import { useFetchUser } from "../lib/user";
 import { Card } from "../components/card";
 import { Button } from "../components/button";
 import { Announcement } from "../components/announcement";
-import hula from "../public/hula.jpg";
+import { Hero } from "../components/hero";
 import "./css/index.css";
 import styles from "./css/app.module.css";
+
 function Home() {
   const { user, loading } = useFetchUser();
 
   return (
     <Layout user={user} loading={loading}>
       <ol>
-        <li
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(2,0,36,0) 0%, rgba(0,0,0,0.4) 100%), url(${hula})`,
-            backgroundSize: "cover",
-            height: "100vh",
-          }}
-        >
-          <section style={{ padding: "1.5rem", height: "100%" }}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-end",
-                height: "90%",
-                maxWidth: "230px",
-              }}
-            >
-              <h4 style={{ color: "white", marginBottom: "1rem" }}>
-                Na Hula Festival
-              </h4>
-              <p style={{ color: "white", lineHeight: "1.35rem" }}>
-                The Honolulu Department of Parks and Recreation is proud to
-                debut the 80th annual Na Hula Festival.
-              </p>
-            </div>
-          </section>
-        </li>
+        <Hero />
         <li className={styles.upcoming_events_container}>
           <section className={styles.upcoming_events_header}>
             <h4>Upcoming Events</h4>
@@ -52,10 +27,10 @@ function Home() {
 
           <ol className={styles.upcoming_events_list}>
             <li>
-              <Card></Card>
+              <Card />
             </li>
             <li>
-              <Card></Card>
+              <Card />
             </li>
           </ol>
         </li>
