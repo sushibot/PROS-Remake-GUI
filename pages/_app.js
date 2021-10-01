@@ -7,7 +7,6 @@ import "./css/index.css";
 
 function Home() {
   const { user, loading } = useFetchUser();
-
   return (
     <Layout user={user} loading={loading}>
       <Hero />
