@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Header from "./header";
 
 function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Next.js with Auth0</title>
+        <title>PROS Remake</title>
       </Head>
 
       {/* <Header user={user} loading={loading} /> */}

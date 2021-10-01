@@ -1,5 +1,5 @@
-import styles from "./css/Card.module.css";
-import festival_pic from "../public/food_festival.jpg";
+import styles from "./Card.module.css";
+import festival_pic from "../../public/food_festival.jpg";
 
 export function Card() {
   return (

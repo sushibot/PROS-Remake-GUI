@@ -1,0 +1,17 @@
+.upcoming_events_container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.upcoming_events_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.upcoming_events_list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}

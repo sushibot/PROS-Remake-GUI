@@ -1,0 +1,40 @@
+.pb_2 {
+  padding-bottom: 2rem;
+}
+.mb_2 {
+  margin-bottom: 2rem;
+}
+.mb_1 {
+  margin-bottom: 1rem;
+}
+.mb_half {
+  margin-bottom: 0.5rem;
+}
+.title {
+  color: #0ac583;
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  color: white;
+}
+.text {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.announcements_container {
+  padding: 1.5rem;
+  background: #04201b;
+}
+.announcements_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.announcement_item {
+  border-bottom: 1px solid #0ac5b3;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
