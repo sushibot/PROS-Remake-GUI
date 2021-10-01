@@ -5,6 +5,8 @@ export function Hero({ title, text }) {
   return (
     <div className={styles.container}>
       <section className={styles.inner_container}>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}></div>
+
         <div className={styles.text_container}>
           <h4 style={{ color: "white", marginBottom: "1rem" }}>{title}</h4>
           <p style={{ color: "white", lineHeight: "1.35rem" }}>{text}</p>

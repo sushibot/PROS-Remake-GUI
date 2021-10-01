@@ -24,17 +24,15 @@ export function Announcements() {
         </li>
         <li className={styles.announcement_item}>
           <AnnouncementItem
-            text="As we get closer to 60% vaccination statewide, the Governor
-                  and Mayor ..."
-            title="Parks & Closure Updates"
+            text="Hanauma Bay will be closed for routine maintenance on the first of the month ..."
+            title="Hanauma Bay Maintenance"
             subtitle="June 24, 2021"
           />
         </li>
         <li className={styles.announcement_item}>
           <AnnouncementItem
-            text="As we get closer to 60% vaccination statewide, the Governor
-                  and Mayor ..."
-            title="Parks & Closure Updates"
+            text="Lorem ipsum sit dolor du amet color sit semper figeru ..."
+            title="Jellyfish and Beach Alerts"
             subtitle="June 24, 2021"
           />
         </li>
