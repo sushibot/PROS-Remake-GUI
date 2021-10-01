@@ -17,7 +17,7 @@ function Layout({ children }) {
       <style jsx>{`
         .container {
           max-width: 42rem;
-          margin: 1.5rem auto;
+          margin: 0 auto;
         }
       `}</style>
       <style jsx global>{`
