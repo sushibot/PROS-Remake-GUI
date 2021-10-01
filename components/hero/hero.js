@@ -1,5 +1,4 @@
-import styles from "./css/Hero.module.css";
-import hula from "../public/hula.jpg";
+import styles from "./Hero.module.css";
 
 export function Hero() {
   return (

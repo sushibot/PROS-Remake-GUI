@@ -1,6 +1,6 @@
-import styles from "./css/Announcment.module.css";
+import styles from "./Announcment.module.css";
 
-export function Announcement({ text, title, subtitle, Button }) {
+export function AnnouncementItem({ text, title, subtitle, Button }) {
   return (
     <div>
       <section className={styles.mb_1}>

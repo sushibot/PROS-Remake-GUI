@@ -1,4 +1,4 @@
-import styles from "./css/Button.module.css";
+import styles from "./Button.module.css";
 export function Button({ text, background_color, text_color, border_color }) {
   return (
     <button
