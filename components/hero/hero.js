@@ -4,12 +4,15 @@ import PropTypes from "prop-types";
 export function Hero({ title, text }) {
   return (
     <div className={styles.container}>
-      <section className={styles.inner_container}>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}></div>
+      <section className="p-6 h-full">
+        {/* below is gonna be menu item */}
+        {/* <div style={{ display: "flex", justifyContent: "flex-end" }}></div> */}
 
-        <div className={styles.text_container}>
-          <h4 style={{ color: "white", marginBottom: "1rem" }}>{title}</h4>
-          <p style={{ color: "white", lineHeight: "1.35rem" }}>{text}</p>
+        <div className="flex flex-col lg:max-w-24rem max-w-230px justify-end h-full">
+          <h2 className="lg:text-5xl text-3xl text-white mb-4">{title}</h2>
+          <p className="lg:text-lg md:text-base sm:text-sm text-white leading-snug">
+            {text}
+          </p>
         </div>
       </section>
     </div>
