@@ -10,7 +10,7 @@ export function Hero({ title, text }) {
 
         <div className="flex flex-col lg:max-w-24rem max-w-230px justify-end h-full">
           <h2 className="lg:text-5xl text-3xl text-white mb-4">{title}</h2>
-          <p className="lg:text-lg md:text-base sm:text-sm text-white leading-snug">
+          <p className="lg:text-lg md:text-base text-sm text-white leading-snug">
             {text}
           </p>
         </div>
