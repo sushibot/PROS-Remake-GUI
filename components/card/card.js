@@ -1,4 +1,3 @@
-import festival_pic from "../../public/food_festival.jpg";
 import PropTypes from "prop-types";
 
 export function Card({ title, date, image }) {
