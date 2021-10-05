@@ -1,16 +1,28 @@
-import styles from "./Card.module.css";
 import festival_pic from "../../public/food_festival.jpg";
+import PropTypes from "prop-types";
 
-export function Card() {
+export function Card({ title, date, image }) {
   return (
-    <section className={styles.container}>
-      <div className={styles.mb_1}>
-        <img className={styles.image_container} src={festival_pic} />
+    <section className="pr-6 pb-4 flex flex-col align-middle w-96">
+      <div className="mb-4">
+        <img className="w-full h-full rounded-3xl" src={image} />
       </div>
-      <figure className={styles.text_container}>
-        <h5 className={styles.mb_half}>Ala Moana Food Festival</h5>
-        <summary>August 3rd, 2021</summary>
+      <figure className="flex flex-col algin-top just-start w-full">
+        <h3 className="text-xl font-semibold mb-1">{title}</h3>
+        <p className="text-gray-600 font-medium">{date}</p>
       </figure>
     </section>
   );
 }
+
+Card.defaultProps = {
+  title: "Ala Moana Festival",
+  date: "August 3rd, 2021",
+  image: "",
+};
+
+Card.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.string,
+  image: PropTypes.string,
+};

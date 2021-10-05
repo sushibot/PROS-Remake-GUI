@@ -9,8 +9,10 @@ export function Hero({ title, text }) {
         {/* <div style={{ display: "flex", justifyContent: "flex-end" }}></div> */}
 
         <div className="flex flex-col lg:max-w-24rem max-w-230px justify-end h-full">
-          <h2 className="lg:text-5xl text-3xl text-white mb-4">{title}</h2>
-          <p className="lg:text-lg md:text-base text-sm text-white leading-snug">
+          <h2 className="lg:text-5xl text-3xl text-white font-semibold mb-4">
+            {title}
+          </h2>
+          <p className="lg:text-lg text-base  text-white leading-snug">
             {text}
           </p>
         </div>

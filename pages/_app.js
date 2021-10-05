@@ -3,6 +3,7 @@ import { useFetchUser } from "../lib/user";
 import { Events } from "../components/events/events";
 import { Announcements } from "../components/annoucements/announcements";
 import { Hero } from "../components/hero/hero";
+
 // import "./css/index.css";
 import "tailwindcss/tailwind.css";
 function Home() {
