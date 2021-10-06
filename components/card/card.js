@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export function Card({ title, date, image }) {
   return (
-    <section className="pr-6 pb-4 flex flex-col align-middle w-96">
+    <section className="flex flex-col align-middle w-full">
       <div className="mb-4">
         <img className="w-full h-full rounded-3xl" src={image} />
       </div>

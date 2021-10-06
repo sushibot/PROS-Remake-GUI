@@ -19,6 +19,9 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    width: {
+      "mobile-event-image": "325px",
+    },
     maxWidth: {
       "24rem": "24rem",
       "230px": "230px",

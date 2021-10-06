@@ -10,8 +10,35 @@
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.upcoming_events_list {
-  display: flex;
-  flex-direction: row;
+
+.list_item {
+  /* width: 100%; */
   overflow-x: auto;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media all and (max-width: 1042px) {
+  .upcoming_events_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .upcoming_events_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: auto;
+    width: 100%;
+    justify-content: unset;
+  }
+  /* .list_item {
+    width: 325px;
+    overflow-x: auto;
+    padding-right: 1rem;
+  } */
 }
