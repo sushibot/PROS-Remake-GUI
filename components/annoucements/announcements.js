@@ -5,7 +5,7 @@ export function Announcements() {
   return (
     <li className={styles.announcements_container}>
       <section className={styles.announcements_header}>
-        <h2 className="text-2xl md:text-4xl font-semibold text-white">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white">
           Announcements
         </h2>
         <Button

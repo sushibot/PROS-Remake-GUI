@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    color: {
+      secondary: "#0ac5b3",
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
