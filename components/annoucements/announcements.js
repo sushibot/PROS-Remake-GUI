@@ -5,7 +5,9 @@ export function Announcements() {
   return (
     <li className={styles.announcements_container}>
       <section className={styles.announcements_header}>
-        <h4 style={{ color: "white" }}>Announcements</h4>
+        <h2 className="text-2xl md:text-4xl font-semibold text-white">
+          Announcements
+        </h2>
         <Button
           text="View All"
           text_color="#0AC5B3"

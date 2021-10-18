@@ -6,7 +6,7 @@ export function Events() {
   return (
     <div className="p-8">
       <section className="flex justify-between align-middle md:justify-center mb-8">
-        <h2 className="text-3xl font-semibold">Upcoming Events</h2>
+        <h2 className="text-2xl md:text-4xl font-semibold">Upcoming Events</h2>
         <div className="block md:hidden">
           <Button
             text="View All"
