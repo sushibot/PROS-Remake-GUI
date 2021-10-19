@@ -6,7 +6,11 @@ module.exports = {
     extend: {
       textDecoration: ["focus-visible"],
     },
-    color: {
+    backgroundColor: {
+      secondary: "#0ac5b3",
+      "secondary-light": "rgb(250, 254, 253)",
+    },
+    borderColor: {
       secondary: "#0ac5b3",
     },
     screens: {
@@ -34,6 +38,9 @@ module.exports = {
     },
     backgroundImage: {
       "hero-image": "url('/public/img/hula.jpg')",
+    },
+    textColor: {
+      secondary: "#0ac5b3",
     },
   },
   variants: {
