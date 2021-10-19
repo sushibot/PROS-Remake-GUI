@@ -18,14 +18,14 @@ export function Events() {
       </section>
       <section className="sm:hidden mb-8">
         <ul className="flex flex-row overflow-x-auto w-full">
-          <li className="w-mobile-event-image flex-shrink-0 pr-4 mb-4">
+          <li className="w-mobile-event-image flex-shrink-0 mr-4 mb-4 ">
             <Card
               title="Ala Moana Food Festival"
               date="August 3rd, 2021"
               image={festival_pic}
             />
           </li>
-          <li className="w-mobile-event-image flex-shrink-0 pr-4">
+          <li className="w-mobile-event-image flex-shrink-0">
             <Card
               title="Ward Farmers Market"
               date="August 25th, 2021"
@@ -39,28 +39,28 @@ export function Events() {
         style={{ width: "90%" }}
       >
         <ul className="lg:flex lg:flex-row align-middle justify-between mb-8 md:grid md:grid-cols-2">
-          <li className=" md:w-1/4 pr-4 pb-4">
+          <li className=" md:w-1/4 mr-4 pb-4">
             <Card
               title="Ala Moana Food Festival"
               date="August 8th, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4 pr-4">
+          <li className=" md:w-1/4 md:mr-4">
             <Card
               title="Hawaii Film Festival"
               date="August 25th, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4 pr-4">
+          <li className=" md:w-1/4 mr-4">
             <Card
               title="Ward Farmers Market"
               date="September 3rd, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4  pr-4">
+          <li className=" md:w-1/4 md:mr-4">
             <Card
               title="Kaka'ako Farmers Market"
               date="September 12th, 2021"

@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function Layout({ children }) {
+function Main({ children }) {
   return (
     <>
       <Head>
@@ -16,4 +16,4 @@ function Layout({ children }) {
   );
 }
 
-export default Layout;
+export default Main;

@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 export function Card({ title, date, image }) {
   return (
-    <section className="flex flex-col align-middle w-full">
+    <section className="flex flex-col flex-shrink-0 align-middle w-full ">
       <div className="mb-4">
-        <img className="w-full h-full rounded-3xl" src={image} />
+        <img className="w-full h-full rounded-md" src={image} />
       </div>
       <figure className="flex flex-col algin-top just-start w-full">
         <h3 className="text-xl font-semibold mb-1">{title}</h3>
