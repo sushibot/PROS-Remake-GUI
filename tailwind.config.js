@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    extend: {
+      textDecoration: ["focus-visible"],
+    },
     color: {
       secondary: "#0ac5b3",
     },

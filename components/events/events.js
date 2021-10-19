@@ -38,29 +38,29 @@ export function Events() {
         className="hidden sm:block mx-auto my-8"
         style={{ width: "90%" }}
       >
-        <ul className="lg:flex lg:flex-row align-middle justify-between mb-8 md:grid md:grid-cols-2">
-          <li className=" md:w-1/4 mr-4 pb-4">
+        <ul className="lg:flex lg:flex-row align-middle justify-between mb-8 md:grid md:grid-cols-2 md:gap-6 sm:grid-cols-1 sm:gap-4">
+          <li className=" md:w-1/4  shadow">
             <Card
               title="Ala Moana Food Festival"
               date="August 8th, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4 md:mr-4">
+          <li className="md:w-1/4  shadow">
             <Card
               title="Hawaii Film Festival"
               date="August 25th, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4 mr-4">
+          <li className=" md:w-1/4 shadow">
             <Card
               title="Ward Farmers Market"
               date="September 3rd, 2021"
               image={festival_pic}
             />
           </li>
-          <li className=" md:w-1/4 md:mr-4">
+          <li className=" md:w-1/4 shadow">
             <Card
               title="Kaka'ako Farmers Market"
               date="September 12th, 2021"
@@ -69,7 +69,7 @@ export function Events() {
           </li>
         </ul>
       </section>
-      <section className="sm:flex sm:justify-center hidden sm:block">
+      <section className="sm:flex sm:justify-center hidden ">
         <Button
           text="View All"
           text_color="#067a6f"
